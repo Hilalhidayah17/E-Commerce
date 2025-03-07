@@ -1,0 +1,23 @@
+@import url(https://db.onlinewebfonts.com/c/95b9939d188cb02d94daf26cd6667438?family=Proxima+Nova+W01+Bold);
+@import url(https://db.onlinewebfonts.com/c/4a4fee972680df7928438c04f33e9cca?family=Proxima+Nova+W01+Regular);
+@import "tailwindcss";
+
+@theme {
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+  }
+  --font-proxima-bold: "Proxima Nova W01 Bold" cursive;
+  --font-proxima-regular: "Proxima Nova W01 Regular" cursive;
+}
+
+body {
+  overflow: auto !important;
+  padding-right: 0px !important;
+}
